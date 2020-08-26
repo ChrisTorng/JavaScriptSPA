@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angular';
+  public title: string = 'Angular';
+  public message: string = 'Hello Angular!';
+
+  public reverseMessage(): void {
+    this.message = this.message.split('').reverse().join('');
+  }
 }

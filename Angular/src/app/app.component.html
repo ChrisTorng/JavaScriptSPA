@@ -26,6 +26,13 @@
 
 <div class="content" role="main">
 
+  <div>
+    <p>{{ message }}</p>
+    <input type="text" [(ngModel)]="message">
+    <button (click)="reverseMessage()">Reverse Message</button>
+    <br/><br/>
+  </div>
+
   <!-- Highlight Card -->
   <div class="card highlight-card card-small">
 
